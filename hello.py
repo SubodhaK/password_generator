@@ -33,9 +33,14 @@ print("###   GET_YOUR_PASSWORD_NOW!   ###")
 print("")
 
 # that section for ony first round other rounds in the loop
-need = input("do you wont a password ? \"yes\" Or \"no\" -  ") 
-name = input("plese give a name for your password - ")
+need = input("do you wont a password ? \"yes\" Or \"no\" -  ")
+if need == "yes":
+    name = input("plese give a name for your password - ")
+else:
+    print("okay, let's start again!")
+
 TIME = 1  # time take for count how many round going that loop.
+
 
 while need == "yes":
     capital_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
