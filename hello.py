@@ -112,21 +112,26 @@ while need == "yes":
         file = open(PATH, 'w')
         file.write(str(name) + " - " + PASSWORD )
         file.close()
+        TIME += 1
+       print("")
+       print("your password was saved.")
+       print("###################################")
+       print("")
     
     elif SAVE == "yes" and TIME > 1:
         file = open(PATH,"a")
         file.write("\n" + str(name)+" - "+str(PASSWORD))
         file.close()
-    print("")
-    print("your password was saved.")
-    print("###################################")
-    print("")
+        print("")
+        print("your password was saved.")
+        print("###################################")
+        print("")
     need = input("Do You Wont Another ? \"yes\" Or \"no\" - ")
     
     if need == "yes":
         name = input("plese give a name for your password - ")
     print("")
-    TIME += 1
+    
 
 print("BEST OF LUCK")
 print("###################################")
